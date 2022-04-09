@@ -7,8 +7,9 @@
 	
   ## 김동호 DongHo Kim 
   [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fkdomo&count_bg=%235194F0&title_bg=%23555555&icon=github.svg&icon_color=%23E7E7E7&title=visit&edge_flat=false)](https://hits.seeyoufarm.com)
+  [![Gmail Badge](https://img.shields.io/badge/Gmail-EA4335?style=flat-square&logo=Gmail&logoColor=white&link=mailto:ehdgh894@gmail.com)](mailto:ehdgh894@gmail.com)
   [![Naver Badge](https://img.shields.io/badge/Naver-03C75A?style=flat-square&logo=Naver&logoColor=white&link=mailto:dongho5088@naver.com)](mailto:dongho5088@naver.com)
-	[![Instagram Badge](https://img.shields.io/badge/Instagram-E4405F?style=flat-square&logo=Instagram&logoColor=white&link=https://instagram.com/d._.omo)](https://instagram.com/d._.omo)
+  [![Instagram Badge](https://img.shields.io/badge/Instagram-E4405F?style=flat-square&logo=Instagram&logoColor=white&link=https://instagram.com/d._.omo)](https://instagram.com/d._.omo)
   
 
 

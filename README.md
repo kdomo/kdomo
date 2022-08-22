@@ -12,8 +12,7 @@
   [![Instagram Badge](https://img.shields.io/badge/Instagram-E4405F?style=flat-square&logo=Instagram&logoColor=white&link=https://instagram.com/d._.omo)](https://instagram.com/d._.omo)
   
 
-
-![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=kdomo&show_icons=true)
+![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=kdomo&include_all_commits=true&show_icons=true)
 <br/>
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=kdomo&layout=compact)](https://github.com/kdomo/github-readme-stats)
 

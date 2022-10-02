@@ -28,13 +28,13 @@
   
 <img src="https://img.shields.io/badge/IntelliJ IDEA-000000?style=flat-square&logo=IntelliJ IDEA&logoColor=white"/>
 <br/>
+<br/>
 	
 ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=kdomo&include_all_commits=true&show_icons=true&count_private=true)
 <br/>
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=kdomo&layout=compact)](https://github.com/kdomo/github-readme-stats)
 <br/>
-[![Solved.ac Profile](http://mazassumnida.wtf/api/generate_badge?boj=domo)](https://solved.ac/domo)
-  
+[![SolvedAC tier](http://mazassumnida.wtf/api/v2/generate_badge?boj=domo)](https://solved.ac/domo)
 <br/>
 
 ![footer](https://capsule-render.vercel.app/api?type=waving&&color=gradient&height=100&section=footer&fontSize=90)

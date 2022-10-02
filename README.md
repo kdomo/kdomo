@@ -10,12 +10,7 @@
   [![Gmail Badge](https://img.shields.io/badge/Gmail-EA4335?style=flat-square&logo=Gmail&logoColor=white&link=mailto:me@dev-domo.com)](mailto:me@dev-domo.com)
   [![Instagram Badge](https://img.shields.io/badge/Instagram-E4405F?style=flat-square&logo=Instagram&logoColor=white&link=https://instagram.com/d._.omo)](https://instagram.com/d._.omo)
   
-
-![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=kdomo&include_all_commits=true&show_icons=true&count_private=true)
-<br/>
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=kdomo&layout=compact)](https://github.com/kdomo/github-readme-stats)
-
-  <h3>💻 Tech Stack 💻</h3>
+<h3>💻 Tech Stack 💻</h3>
  
 <br/>
   <img src="https://img.shields.io/badge/Html5-E34F26?style=flat-square&logo=Html5&logoColor=white"/> <img src="https://img.shields.io/badge/Javascript-F7DF1E?style=flat-square&logo=Javascript&logoColor=white"/> <img src="https://img.shields.io/badge/CSS-1572B6?style=flat-square&logo=CSS3&logoColor=white"/>
@@ -32,14 +27,19 @@
 
   
 <img src="https://img.shields.io/badge/IntelliJ IDEA-000000?style=flat-square&logo=IntelliJ IDEA&logoColor=white"/>
+<br/>
+	
+![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=kdomo&include_all_commits=true&show_icons=true&count_private=true)
+<br/>
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=kdomo&layout=compact)](https://github.com/kdomo/github-readme-stats)
+<br/>
+[![Solved.ac Profile](http://mazassumnida.wtf/api/generate_badge?boj=domo)](https://solved.ac/domo)
   
 <br/>
 
 ![footer](https://capsule-render.vercel.app/api?type=waving&&color=gradient&height=100&section=footer&fontSize=90)
 
   </div>
-
-
 
 
 

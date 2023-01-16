@@ -30,9 +30,9 @@
 <br/>
 <br/>
 	
-![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=kdomo&include_all_commits=true&show_icons=true&count_private=true)
+![Anurag's GitHub stats](https://github-readme-stats-sigma-five.vercel.app/api?username=kdomo&include_all_commits=true&show_icons=true&count_private=true)
 <br/>
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=kdomo&layout=compact)](https://github.com/kdomo/github-readme-stats)
+[![Top Langs](https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=kdomo&layout=compact)](https://github.com/kdomo/github-readme-stats)
 <br/>
 [![SolvedAC tier](http://mazassumnida.wtf/api/v2/generate_badge?boj=domo)](https://solved.ac/domo)
 <br/>

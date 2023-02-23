@@ -7,7 +7,8 @@
 기술적인 이야기를 같이 하고 싶으시면 언제든 편하게 연락주세요. 
 
 [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fkdomo&count_bg=%23000000&title_bg=%23555555&icon=github.svg&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
-[![Gmail Badge](https://img.shields.io/badge/gmail-ffffff?style=flat-square&logo=Gmail&logoColor=white&link=mailto:me@dev-domo.com)](mailto:me@dev-domo.com) [![Instagram Badge](https://img.shields.io/badge/Instagram-ffffff?style=flat-square&logo=Instagram&logoColor=white&link=https://instagram.com/d._.omo)](https://instagram.com/d._.omo) 
+[<img src="https://img.shields.io/badge/mail-ffffff?style=flat-square&logo=Gmail&logoColor=000000"/>](mailto:me@dev-domo.com)
+[<img src="https://img.shields.io/badge/Instagram-ffffff?style=flat-square&logo=Instagram&logoColor=000000"/>](https://instagram.com/d._.omo)
 <br/>
 <br/>
 
@@ -34,11 +35,3 @@
 [![SolvedAC tier](http://mazassumnida.wtf/api/v2/generate_badge?boj=domo)](https://solved.ac/domo)
 	
 </div>
-
-
-
-
-
-
-
-

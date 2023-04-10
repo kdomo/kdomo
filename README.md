@@ -12,6 +12,12 @@
 <br/>
 <br/>
 
+:octocat: Contributions
+- Spring Boot
+  - (PR) [spring-projects/spring-boot#34868](https://github.com/spring-projects/spring-boot/pull/34868)
+    - Fix banner location value hard coded
+
+
 <div align=center>
 <br/>
 <img src="https://img.shields.io/badge/Java-ffffff?style=flat-square&logo=Java&logoColor=000000"/>

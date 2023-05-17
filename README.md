@@ -35,12 +35,14 @@
 <img src="https://img.shields.io/badge/Amazon AWS-ffffff?style=flat-square&logo=Amazon AWS&logoColor=000000"/>
 <img src="https://img.shields.io/badge/NGINX-ffffff?style=flat-square&logo=NGINX&logoColor=000000"/>
 
+<!--
 <br/>
 <br/>
 
 <a href="https://velog.io/@domo">
   <img src="https://velog-readme-stats.vercel.app/api?name=domo">
 </a>
+-->
 <br/>
 <br/>
 

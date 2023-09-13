@@ -43,9 +43,10 @@
   <img src="https://velog-readme-stats.vercel.app/api?name=domo">
 </a>
 -->
+<!--
 <br/>
 <br/>
-
 [![SolvedAC tier](http://mazassumnida.wtf/api/v2/generate_badge?boj=domo)](https://solved.ac/domo)
+-->
 	
 </div>

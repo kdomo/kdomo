@@ -62,6 +62,12 @@
   - 하드코딩된 배너 경로 문자열을 `DEFAULT_BANNER_LOCATION` 상수로 대체
   - 반영됨 (팀이 직접 커밋으로 적용 후 PR close)
 
+**[Spring Data MongoDB](https://github.com/spring-projects/spring-data-mongodb)**
+
+- [#5242](https://github.com/spring-projects/spring-data-mongodb/pull/5242) - Remove redundant assertion in EncryptionOptions constructor (2026.09)
+  - `@Nullable`인 `queryableEncryptionOptions` 대신 `key`를 중복 검증하던 assertion 제거
+  - Merged into `main` / Back ported to `5.1.x`, `5.0.x` / Milestone `5.0.8`
+
 ### Education
 
 - [남서울대학교](http://nsu.ac.kr/) - 컴퓨터소프트웨어학과 (2016.03 ~ 2022.02)

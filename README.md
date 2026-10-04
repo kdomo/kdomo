@@ -7,6 +7,37 @@
 
 <br/>
 
+### Open Source Contributions
+
+**[Armeria](https://github.com/line/armeria)** · LINE
+
+- [#6975](https://github.com/line/armeria/pull/6975) - Let GrpcService specify a maximum bound for grpc-timeout (2026.10)
+  - 서버가 클라이언트의 `grpc-timeout` 요청을 신뢰할지 무시할지만 선택할 수 있어, 신뢰할 수 없는 클라이언트의 과도한 타임아웃 요구를 제한할 수단이 없던 문제. 공개 API `GrpcTimeoutPolicy`를 설계해 상한 / 오프셋 / 메서드별 결정을 표현 가능하게 함
+  - 메인테이너 리뷰로 설계 3회 조정 - 네이밍, 무한 타임아웃을 sentinel 대신 `null`로 표현(grpc-java의 `@Nullable Deadline`, Envoy의 필드 존재 방식 선례 조사 후 제안), `withOffset` 인터페이스 메서드를 팩토리 인자로 흡수
+  - 리뷰 반영 중 음수 헤더로 서버 내부 신호를 흉내낼 수 있는 경로와 `grpc-timeout: 0S`의 의미가 바뀌던 회귀를 발견, 세 커밋에서 동작을 비교 실행해 검증 후 수정
+  - `new feature` / Merged into `main` / Milestone `1.42.0` / +806 -41 (7 files)
+
+**[Spring Boot](https://github.com/spring-projects/spring-boot)**
+
+- [#51568](https://github.com/spring-projects/spring-boot/pull/51568) - Some assertion messages name the wrong parameter (2026.09)
+  - 메서드에 존재하지 않는 파라미터를 가리키던 Assert 진단 메시지 3곳 수정
+  - `type: bug` / Merged into `4.0.x` / Milestone `4.0.9`
+- [#51562](https://github.com/spring-projects/spring-boot/issues/51562) - `OAuth2ResourceServerProperties.Jwt` has a setter that does not match its getter (2026.09)
+  - getter/setter 프로퍼티 이름 불일치로 문서에 없는 설정 키가 바인딩되던 문제 제보
+  - `type: bug` / Milestone `4.1.2`
+- [#51509](https://github.com/spring-projects/spring-boot/pull/51509) - Customizer null checks in HTTP client builders assert the wrong attribute (2026.08)
+  - `mergedCustomizers`가 파라미터 대신 필드를 검증해 null 인자가 걸러지지 않던 문제 수정
+  - `type: bug` / Merged into `4.0.x` / Milestone `4.0.9`
+- [#34868](https://github.com/spring-projects/spring-boot/pull/34868) - Use banner location constant (2023.04)
+  - 하드코딩된 배너 경로 문자열을 `DEFAULT_BANNER_LOCATION` 상수로 대체
+  - 반영됨 (팀이 직접 커밋으로 적용 후 PR close)
+
+**[Spring Data MongoDB](https://github.com/spring-projects/spring-data-mongodb)**
+
+- [#5242](https://github.com/spring-projects/spring-data-mongodb/pull/5242) - Remove redundant assertion in EncryptionOptions constructor (2026.09)
+  - `@Nullable`인 `queryableEncryptionOptions` 대신 `key`를 중복 검증하던 assertion 제거
+  - Merged into `main` / Back ported to `5.1.x`, `5.0.x` / Milestone `5.0.8`
+
 ### Work Experience
 
 #### 바틀 (BOTTLE)
@@ -44,29 +75,6 @@
 - [KT 사내 챗봇](https://ibot.kt.com/client/pc-web/chat.html) Solr 기반 검색 엔진 백엔드 개발
 - Thymeleaf 관리자 CMS 구현(학습 데이터 CRUD / 검색 / 시각화), PostgreSQL / Redis 캐시 활용
 - Jenkins / GitLab CI 파이프라인 구축
-
-### Open Source Contributions
-
-**[Spring Boot](https://github.com/spring-projects/spring-boot)**
-
-- [#51568](https://github.com/spring-projects/spring-boot/pull/51568) - Some assertion messages name the wrong parameter (2026.09)
-  - 메서드에 존재하지 않는 파라미터를 가리키던 Assert 진단 메시지 3곳 수정
-  - `type: bug` / Merged into `4.0.x` / Milestone `4.0.9`
-- [#51562](https://github.com/spring-projects/spring-boot/issues/51562) - `OAuth2ResourceServerProperties.Jwt` has a setter that does not match its getter (2026.09)
-  - getter/setter 프로퍼티 이름 불일치로 문서에 없는 설정 키가 바인딩되던 문제 제보
-  - `type: bug` / Milestone `4.1.2`
-- [#51509](https://github.com/spring-projects/spring-boot/pull/51509) - Customizer null checks in HTTP client builders assert the wrong attribute (2026.08)
-  - `mergedCustomizers`가 파라미터 대신 필드를 검증해 null 인자가 걸러지지 않던 문제 수정
-  - `type: bug` / Merged into `4.0.x` / Milestone `4.0.9`
-- [#34868](https://github.com/spring-projects/spring-boot/pull/34868) - Use banner location constant (2023.04)
-  - 하드코딩된 배너 경로 문자열을 `DEFAULT_BANNER_LOCATION` 상수로 대체
-  - 반영됨 (팀이 직접 커밋으로 적용 후 PR close)
-
-**[Spring Data MongoDB](https://github.com/spring-projects/spring-data-mongodb)**
-
-- [#5242](https://github.com/spring-projects/spring-data-mongodb/pull/5242) - Remove redundant assertion in EncryptionOptions constructor (2026.09)
-  - `@Nullable`인 `queryableEncryptionOptions` 대신 `key`를 중복 검증하던 assertion 제거
-  - Merged into `main` / Back ported to `5.1.x`, `5.0.x` / Milestone `5.0.8`
 
 ### Education
 

@@ -15,7 +15,18 @@
   - 서버가 클라이언트의 `grpc-timeout` 요청을 신뢰할지 무시할지만 선택할 수 있어, 신뢰할 수 없는 클라이언트의 과도한 타임아웃 요구를 제한할 수단이 없던 문제. 공개 API `GrpcTimeoutPolicy`를 설계해 상한 / 오프셋 / 메서드별 결정을 표현 가능하게 함
   - 메인테이너 리뷰로 설계 3회 조정 - 네이밍, 무한 타임아웃을 sentinel 대신 `null`로 표현(grpc-java의 `@Nullable Deadline`, Envoy의 필드 존재 방식 선례 조사 후 제안), `withOffset` 인터페이스 메서드를 팩토리 인자로 흡수
   - 리뷰 반영 중 음수 헤더로 서버 내부 신호를 흉내낼 수 있는 경로와 `grpc-timeout: 0S`의 의미가 바뀌던 회귀를 발견, 세 커밋에서 동작을 비교 실행해 검증 후 수정
-  - `new feature` / Merged into `main` / Milestone `1.42.0` / +806 -41 (7 files)
+  - `new feature` / Merged into `main` / Milestone `1.42.0` / 릴리스 노트 기여자 등재 / +806 -41 (7 files)
+- [#7133](https://github.com/line/armeria/pull/7133) - Delegate renderStatus when composing a ServiceErrorHandler (2026.11)
+  - `ServiceErrorHandler.orElse()`가 람다를 반환해, `@FunctionalInterface`의 기본 구현(null 반환)이 쓰이면서 합성된 핸들러가 `renderStatus()`를 양쪽 어디에도 위임하지 않던 버그. 호출부에 `assert response != null`이 있어 `HttpStatusException`이 500으로 끝나던 문제
+  - 다른 작업 중 테스트 6건이 400 대신 500을 반환해 발견. 베이스라인 비교로 원인을 특정하고, 변경 범위를 좁혀가며 핸들러에 들어오는 예외를 확인한 뒤 `ServerErrorHandler.orElse()`와 대조해 차이를 규명
+  - 원래 작업과 독립적인 버그라 별도 PR로 분리
+  - `defect` / Merged into `main` / Milestone `1.43.1`
+- [#7051](https://github.com/line/armeria/issues/7051) - `grpc-timeout` is applied from the service invocation, not from when the request arrived (2026.10)
+  - 클라이언트가 전파한 데드라인이 요청 도착 시점이 아니라 서비스 호출 시점부터 측정되는 문제 제기. 400ms 선행 지연 + 1000ms 타임아웃 조건에서 1416ms 발동을 실측하고 `SET_FROM_START` 적용 시 1022ms로 정렬됨을 확인
+  - `defect` 분류 / 해결되며 close
+- [#7089](https://github.com/line/armeria/pull/7089) - Fail an exhausted gRPC deadline with DEADLINE_EXCEEDED (2026.10, 리뷰 중)
+  - 데드라인이 이미 소진된 요청이 응답 시작 전에 취소되어 HTTP 503(`UNAVAILABLE`)으로 나가던 문제. 재시도가 안전하다는 뜻이라 느린 파이프라인이 재시도로 번지는 상황
+  - 메인테이너가 제안한 `ServiceErrorHandler` 방식을 구현해본 뒤, gRPC 호출이 이미 응답을 소유해 해당 예외가 핸들러에 닿지 못함을 측정으로 보이고 좁은 수정으로 정리
 
 **[Spring Boot](https://github.com/spring-projects/spring-boot)**
 
@@ -37,6 +48,12 @@
 - [#5242](https://github.com/spring-projects/spring-data-mongodb/pull/5242) - Remove redundant assertion in EncryptionOptions constructor (2026.09)
   - `@Nullable`인 `queryableEncryptionOptions` 대신 `key`를 중복 검증하던 assertion 제거
   - Merged into `main` / Back ported to `5.1.x`, `5.0.x` / Milestone `5.0.8`
+
+**[Spring Data Commons](https://github.com/spring-projects/spring-data-commons)**
+
+- [#3540](https://github.com/spring-projects/spring-data-commons/pull/3540) - Fix null check in withStringMatcher (2026.09)
+  - `withStringMatcher`가 파라미터 `defaultStringMatcher` 대신 `ignoredPaths`를 검증해 null 인자가 걸러지지 않던 문제 수정
+  - `type: bug` / 반영됨 (팀이 직접 커밋으로 적용 후 PR close, 커밋 작성자 유지) / Milestone `4.0.9`
 
 ### Work Experience
 
